@@ -7,5 +7,6 @@ app.use(bodyParser.urlencoded( { extended: false }));
 
 require('./database/db');
 require('./controllers/AuthController')(app);
+require('./controllers/ProjectController')(app);
 
 app.listen(3001);
