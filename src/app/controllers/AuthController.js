@@ -148,8 +148,6 @@ router.post('/reset_password', async (req, res) => {
     } catch (error) {
         return res.send(500).send({ error : 'Internal server error'});
     }
-
-    res.send('12333');
 });
 
 module.exports = (app) => {
